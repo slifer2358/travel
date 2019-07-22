@@ -1,8 +1,11 @@
 package com.baize.domain;
 
+
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
+public class User implements Serializable {
    private Integer userId ;
    private String username;
    private String password ;
@@ -13,6 +16,22 @@ public class User {
    private Date updateTime;
    private String userEmail;
    private int flag;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", userTel='" + userTel + '\'' +
+                ", userType=" + userType +
+                ", userAvails=" + userAvails +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", userEmail='" + userEmail + '\'' +
+                ", flag=" + flag +
+                '}';
+    }
 
     public Integer getUserId() {
         return userId;
@@ -92,21 +111,5 @@ public class User {
 
     public void setFlag(int flag) {
         this.flag = flag;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", userTel='" + userTel + '\'' +
-                ", userType=" + userType +
-                ", userAvails=" + userAvails +
-                ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
-                ", userEmail='" + userEmail + '\'' +
-                ", flag=" + flag +
-                '}';
     }
 }

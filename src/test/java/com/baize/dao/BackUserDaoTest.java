@@ -9,8 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"classpath:spring-mybatis.xml"
-        , "classpath:spring-druid.xml"
-        , "classpath:spring-context.xml"})
+        ,  "classpath:spring-context.xml","classpath:mybatis-config.xml"})
 public class BackUserDaoTest {
     @Autowired
     private IBackUserDao backUserDao;
