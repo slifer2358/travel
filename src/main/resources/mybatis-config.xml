@@ -21,7 +21,7 @@
         <!-- 是否可以使用列的别名 (取决于驱动的兼容性) default:true -->
         <setting name="useColumnLabel" value="true"/>
 
-        <!-- 允许 JDBC 生成主键。需要驱动器支持。如果设为了 true，这个设置将强制使用被生成的主键，有一些驱动器不兼容不过仍然可以执行。 default:false  -->
+        <!-- 允许 JDBC 生成主键。需要驱动器支持。如果设为了 trueb，这个设置将强制使用被生成的主键，有一些驱动器不兼容不过仍然可以执行。 default:false  -->
         <setting name="useGeneratedKeys" value="false"/>
 
         <!-- 指定 MyBatis 如何自动映射 数据基表的列 NONE：不映射 PARTIAL：部分 FULL:全部  -->
